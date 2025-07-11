@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto" 
+    android:layout_marginBottom="6dp"
+    android:layout_marginEnd="12dp"
+    android:clickable="true"
+    android:elevation="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/cardBackground"
+    android:layout_marginTop="6dp"
+    android:layout_marginStart="12dp"
+    card_view:cardCornerRadius="12dp"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+    <LinearLayout 
+        android:gravity="center_vertical"
+        android:paddingVertical="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+        <TextView 
+            android:gravity="center"
+            android:background="@drawable/bg_surah_card"
+            android:elevation="1dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:textSize="19sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/surahNumber"
+            android:text="1"
+            android:textStyle="bold" />
+        <TextView
+            android:ellipsize="end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="12dp"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:id="@+id/surahTitle"
+            android:text="الفاتحة (مكية • 7 آيات)" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

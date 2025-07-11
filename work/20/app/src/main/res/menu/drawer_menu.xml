@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group 
+        android:checkableBehavior="single">
+        <item 
+            android:title="@string/home"
+            android:icon="@drawable/home"
+            android:id="@+id/home" />
+    </group>
+    <item 
+        android:title="@string/settings_and_support">
+        <menu>
+            <item 
+                android:title="@string/setting"
+                android:icon="@drawable/ic_settings"
+                android:id="@+id/settings" />
+            <item 
+                android:title="@string/help"
+                android:icon="@drawable/ic_help"
+                android:id="@+id/help" />
+            <item 
+                android:title="@string/info"
+                android:icon="@drawable/ic_info"
+                android:id="@+id/about" />
+        </menu>
+    </item>
+    <item 
+        android:title="@string/share_and_rate">
+        <menu>
+            <item 
+                android:title="@string/share"
+                android:icon="@drawable/ic_share"
+                android:id="@+id/share" />
+            <item
+                android:id="@+id/share_qr"
+                android:title="مشاركة عبر رمز QR"
+                android:icon="@drawable/qr_icon"
+                />
+
+            <item 
+                android:title="@string/rate_app"
+                android:icon="@drawable/ic_star"
+                android:id="@+id/rate" />
+            <item 
+                android:title="@string/other_apps"
+                android:icon="@drawable/ic_apps"
+                android:id="@+id/other_apps" />
+        </menu>
+    </item>
+    <item 
+        android:title="@string/exit"
+        android:icon="@drawable/ic_exit"
+        android:id="@+id/action_exit" />
+</menu>

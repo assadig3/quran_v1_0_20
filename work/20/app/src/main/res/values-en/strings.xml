@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quran Kareem</string>
+    <string name="home">Home</string>
+    <string name="settings_and_support">Settings &amp; Support</string>
+    <string name="setting">Settings</string>
+    <string name="help">Help</string>
+    <string name="info">About the App</string>
+    <string name="share_and_rate">Share &amp; Rate</string>
+    <string name="share">Share App</string>
+    <string name="share_qr">Share via QR Code</string>
+    <string name="rate_app">Rate App</string>
+    <string name="other_apps">Other Apps</string>
+    <string name="exit">Exit</string>
+    <string name="about_app_description">Quran Kareem app – Read and listen to the Holy Quran with features like recitation, search, bookmarks, night mode, and more.</string>
+    <string name="help_title">Help</string>
+    <string name="help_content">For support or inquiries, please check the FAQ section or contact the support team through the settings page.</string>
+    <string name="app_logo">App Logo</string>
+
+    <!-- Navigation Drawer strings -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

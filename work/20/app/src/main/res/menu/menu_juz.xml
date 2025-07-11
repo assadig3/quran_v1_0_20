@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item 
+        android:title="📌 آخر جزء تم قراءته"
+        android:icon="@drawable/ic_bookmark"
+        android:id="@+id/nav_last_read" />
+    <item 
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="بحث"
+        android:icon="@drawable/ic_search"
+        android:id="@+id/action_jump_to_juz" />
+    <item 
+        android:title="📖 الانتقال لسورة"
+        android:id="@+id/action_jump" />
+</menu>
