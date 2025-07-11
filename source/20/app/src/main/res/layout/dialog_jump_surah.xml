@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/dialogJumpSurahRoot">
+    <EditText 
+        android:background="@drawable/bg_edit_text"
+        android:hint="ابحث عن السورة"
+        android:textDirection="rtl"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:inputType="text"
+        android:id="@+id/searchSurahEditText" />
+    <androidx.recyclerview.widget.RecyclerView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="12dp"
+        android:id="@+id/jumpSurahRecycler"
+        android:overScrollMode="ifContentScrolls" />
+</LinearLayout>

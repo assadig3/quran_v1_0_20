@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">القرآن الكريم</string>
+    <string name="home">الرئيسية</string>
+    <string name="settings_and_support">الإعدادات والدعم</string>
+    <string name="setting">الإعدادات</string>
+    <string name="help">مساعدة</string>
+    <string name="info">حول التطبيق</string>
+    <string name="share_and_rate">مشاركة وتقييم</string>
+    <string name="share">مشاركة التطبيق</string>
+    <string name="share_qr">مشاركة عبر رمز QR</string>
+    <string name="rate_app">قيّم التطبيق</string>
+    <string name="other_apps">تطبيقات أخرى</string>
+    <string name="exit">خروج</string>
+    <string name="about_app_description">تطبيق القرآن الكريم – اقرأ واستمع للقرآن مع ميزات مثل التلاوة، البحث، العلامات، الوضع الليلي والمزيد.</string>
+    <string name="help_title">مساعدة</string>
+    <string name="help_content">للدعم أو الاستفسارات، يرجى مراجعة قسم الأسئلة الشائعة أو التواصل مع فريق الدعم من خلال صفحة الإعدادات.</string>
+    <string name="app_logo">شعار التطبيق</string>
+
+    <!-- Navigation Drawer strings -->
+    <string name="navigation_drawer_open">فتح القائمة الجانبية</string>
+    <string name="navigation_drawer_close">إغلاق القائمة الجانبية</string>
+</resources>

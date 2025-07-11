@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView 
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tafsirTitle"
+        android:text="سورة البقرة [255]"
+        android:textStyle="bold" />
+    <View 
+        android:background="@color/colorPrimary"
+        android:alpha="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView 
+        android:textDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.2"
+        android:id="@+id/tafsirBody"
+        android:text="سيتم عرض التفسير هنا"
+        android:paddingTop="12dp" />
+</LinearLayout>

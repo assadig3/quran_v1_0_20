@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item 
+        app:showAsAction="ifRoom"
+        android:title="إشارة مرجعية"
+        android:icon="@drawable/ic_star_border"
+        android:id="@+id/action_toggle_bookmark" />
+    <item 
+        app:showAsAction="never"
+        android:title="انتقال إلى جزء"
+        android:icon="@drawable/ic_jump"
+        android:id="@+id/action_jump_to_juz" />
+    <item 
+        app:showAsAction="never"
+        android:title="انتقال إلى سورة"
+        android:icon="@drawable/ic_jump"
+        android:id="@+id/action_jump" />
+    <item 
+        app:showAsAction="never"
+        android:title="تكرار"
+        android:icon="@drawable/ic_repeat"
+        android:id="@+id/action_toggle_repeat" />
+    <item 
+        app:showAsAction="never"
+        android:title="اختيار التفسير"
+        android:icon="@drawable/ic_tafsir"
+        android:id="@+id/action_select_tafsir" />
+    <item 
+        app:showAsAction="ifRoom"
+        android:title="تحميل التفسير"
+        android:icon="@drawable/ic_download"
+        android:id="@+id/action_download_tafsir" />
+</menu>

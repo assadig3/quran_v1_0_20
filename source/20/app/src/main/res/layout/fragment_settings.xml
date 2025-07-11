@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground">
+
+    <!-- Toolbar أعلى الشاشة مع سهم يمين -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        android:title="الإعدادات"
+        android:titleTextColor="@android:color/white"
+        android:navigationIcon="@drawable/ic_arrow_back" />
+
+    <!-- المحتوىScrollable-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:gravity="center_horizontal">
+
+            <!-- زر إعادة الإعدادات -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/resetOnboardingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:drawableStart="@drawable/ic_restart"
+                    android:text="إعادة إعدادات البداية" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- اختيار اللغة -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اختر اللغة"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginBottom="8dp" />
+                    <RadioGroup
+                        android:id="@+id/languageGroup"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/lang_ar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="العربية"
+                            android:buttonTint="@color/colorPrimary"/>
+                        <RadioButton
+                            android:id="@+id/lang_en"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="English"
+                            android:buttonTint="@color/colorPrimary"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- اختيار المظهر -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اختر المظهر"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginBottom="8dp" />
+                    <RadioGroup
+                        android:id="@+id/themeGroup"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/theme_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نهاري"
+                            android:buttonTint="@color/colorPrimary"/>
+                        <RadioButton
+                            android:id="@+id/theme_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ليلي"
+                            android:buttonTint="@color/colorPrimary"/>
+                        <RadioButton
+                            android:id="@+id/theme_system"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="حسب النظام"
+                            android:buttonTint="@color/colorPrimary"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- اختيار حجم الخط -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اختر حجم الخط"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginBottom="8dp" />
+                    <RadioGroup
+                        android:id="@+id/fontGroup"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/font_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="صغير"
+                            android:buttonTint="@color/colorPrimary"/>
+                        <RadioButton
+                            android:id="@+id/font_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="متوسط"
+                            android:buttonTint="@color/colorPrimary"/>
+                        <RadioButton
+                            android:id="@+id/font_large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="كبير"
+                            android:buttonTint="@color/colorPrimary"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- إبقاء الشاشة مضاءة -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="خيارات الشاشة"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginBottom="8dp" />
+                    <Switch
+                        android:id="@+id/keepScreenOnSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="إبقاء الشاشة مضاءة أثناء القراءة"
+                        android:trackTint="@color/primaryLight"
+                        android:thumbTint="@color/colorPrimary"
+                        android:textColor="@color/textPrimary"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- اختيار القارئ -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اختر القارئ"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginBottom="8dp" />
+                    <Spinner
+                        android:id="@+id/qariSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- QR code (زر دائري جميل) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:gravity="center"
+                    android:padding="18dp"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:elevation="6dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center">
+                        <View
+                            android:background="@drawable/bg_qr_circle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/qrImage"
+                            android:src="@drawable/qr_icon"
+                            android:layout_width="58dp"
+                            android:layout_height="58dp"
+                            android:layout_gravity="center"/>
+                    </FrameLayout>
+                    <TextView
+                        android:id="@+id/qrHint"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/textSecondary"
+                        android:text="امسح الكود لتحميل التطبيق"
+                        android:textStyle="bold"
+                        android:paddingTop="12dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

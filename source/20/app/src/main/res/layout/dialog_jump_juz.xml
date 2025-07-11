@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView 
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="الانتقال إلى جزء"
+        android:textStyle="bold" />
+    <EditText 
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="🔍 ابحث عن جزء"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/juzSearchField" />
+    <androidx.recyclerview.widget.RecyclerView 
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/jumpJuzRecycler" />
+</LinearLayout>

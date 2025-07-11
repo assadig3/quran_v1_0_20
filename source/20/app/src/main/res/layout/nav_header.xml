@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView 
+        android:src="@drawable/icon"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_logo"
+        android:background="@drawable/circle_bg"
+        android:cropToPadding="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/header_icon" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:id="@+id/header_app_name"
+        android:text="@string/app_name"
+        android:textStyle="bold" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FAFAFA"
+        android:id="@+id/header_developer"
+        android:text="بواسطة: Assadig Hassan" />android:textSize=&quot;13sp&quot;\10    android:layout_marginTop=&quot;2dp&quot;\10    android:fontFamily=&quot;sans-serif-light&quot; /&gt;
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F5F5F5"
+        android:id="@+id/gregorianDate"
+        android:text="7 June 2025" />android:textSize=&quot;12sp&quot;\10    android:layout_marginTop=&quot;8dp&quot;\10    android:fontFamily=&quot;sans-serif&quot; /&gt;
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#F5F5F5"
+        android:layout_marginTop="2dp"
+        android:id="@+id/hijriDate"
+        android:text="1 ذو الحجة 1446 هـ" />
+</LinearLayout>
